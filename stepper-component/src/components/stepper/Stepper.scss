@@ -2,27 +2,13 @@
   font-size: 16px;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-
 .root___jhJ:hover{
   background: rgba(0, 0, 0, 0.08);
   cursor: pointer;
 }
-
 .horizontal___1wo {
   display: flex;
   justify-content: space-around;
-}
-
-.ripple-effect {
-  --mdc-ripple-fg-size: 0;
-  --mdc-ripple-left: 0;
-  --mdc-ripple-top: 0;
-  --mdc-ripple-fg-scale: 1;
-  --mdc-ripple-fg-translate-end: 0;
-  --mdc-ripple-fg-translate-start: 0;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  will-change: transform, opacity;
-  overflow: hidden;
 }
 
 .root___jhJ {
@@ -35,9 +21,6 @@
   /* overflow: hidden; */
 }
 
-.ripple-effect.mdc-ripple-upgraded {
-  --mdc-ripple-fg-opacity: 0.12;
-}
 
 .horizontal___3z7.root___jhJ {
   flex-direction: column;
@@ -45,33 +28,6 @@
 }
 
 
-.ripple-effect.mdc-ripple-upgraded::before {
-  transform: scale(var(--mdc-ripple-fg-scale, 1));
-}
-
-.ripple-effect::before, .ripple-effect::after {
-  background-color: #000;
-}
-
-.ripple-effect::before, .ripple-effect::after {
-  top: calc(50% - 100%);
-  left: calc(50% - 100%);
-  width: 200%;
-  height: 200%;
-}
-
-.ripple-effect::before {
-  transition: opacity 15ms linear, background-color 15ms linear;
-  z-index: 1;
-}
-
-.ripple-effect::before, .ripple-effect::after {
-  position: absolute;
-  border-radius: 50%;
-  opacity: 0;
-  pointer-events: none;
-  content: "";
-}
 
 .horizontal___3z7 .tailAfter___2AJ {
   left: calc(50% + 20px / 2);
@@ -100,10 +56,6 @@
   left: 25px;
 }
 
-.ripple-effect.mdc-ripple-upgraded {
-  --mdc-ripple-fg-opacity: 0.12;
-}
-
 
 .visited___2DP .order___Kn1 {
   background-color: var(--cl-primary, #2196f3);
@@ -127,17 +79,6 @@
 }
 
 //------------- ACTIVE
-.active___j0s .order___Kn1::after {
-  content: "";
-  position: absolute;
-  top: -8px;
-  bottom: -8px;
-  left: -8px;
-  right: -8px;
-  border-radius: 50%;
-  background-color: rgba(33, 150, 243, 0.12);
-}
-
 
 //-------------- tail___iPh tailBefore___3Bb
 .horizontal___3z7 .tailBefore___3Bb {
@@ -155,46 +96,4 @@
   transition: all 0.3s ease;
   width: 2px;
   left: 25px;
-}
-
-
-//-----------
-.horizontal___3z7 .description___2FJ {
-  margin-left: unset;
-  min-height: unset;
-  padding-top: unset;
-  padding-bottom: unset;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.active___j0s .description___2FJ {
-  font-weight: 500;
-}
-
-.description___2FJ {
-  margin-left: 24px;
-  padding-top: 2px;
-  transition: all 0.3s ease;
-}
-
-
-//------------
-.order___Kn1 {
-  flex-shrink: 0;
-  width: 20px;
-  height: 20px;
-  line-height: 22px;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 12px;
-  font-weight: bold;
-  position: relative;
-  transition: all 0.3s ease;
-  border: 2px solid var(--cl-primary-light, #bbdefb);
-  color: var(--cl-primary, #2196f3);
-}
-
-.active___j0s .description___2FJ {
-  font-weight: 500;
 }

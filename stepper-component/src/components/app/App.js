@@ -1,9 +1,9 @@
 import React from 'react';
 import Stepper from '../stepper/Stepper'
-
+import { SIMPLE_STEPS } from '../constants/DataCommon';
 function App() {
   return (
-    <Stepper title="App"/>
+    <Stepper steps={SIMPLE_STEPS}/>
   );
 }
 
